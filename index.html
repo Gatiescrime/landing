@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spaceship Rental</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+<div>
+  <div class="banner">
+    <div class="container">
+      <h1>Because space is the future, let's discover it !</h1>
+      <h2>the best spaceship, at the cheapest price</h2>
+      <a href="https://4is4nzcyxhr.typeform.com/to/V6mElCe6" class="btn-blue">Become a pioneer</a>
+    </div>
+  </div>
+
+
+    <div id="text">
+      <h2>Spaceship for sale</h2>
+    </div>
+
+
+  <div class="container">
+
+
+    <div class=cards>
+      <div class=card>
+        <img src="https://i.pinimg.com/originals/eb/3a/70/eb3a70392a89ab5f85e50f25cc494278.jpg" alt="spaceship">
+        <h3>White Fang Spaceship</h3>
+        <a href="#" class="btn-blue">1.200.000.000$</a>
+      </div>
+
+      <div class=card>
+        <img src="https://as2.ftcdn.net/v2/jpg/02/74/83/27/1000_F_274832731_8vs3QgDBHvc4TIU1IPOSwQkngnjS4yw2.jpg" alt="spaceship">
+        <h3>Orange Terror Spaceship</h3>
+        <a href="#" class="btn-blue">1.650.000.000$</a>
+      </div>
+
+      <div class=card>
+        <img src="https://img.freepik.com/premium-photo/wondrous-futuristic-small-scifi-space-racer-with-engine-space-racing_31965-87324.jpg" alt="spaceship">
+        <h3>Land Explorer v2</h3>
+        <a href="#" class="btn-blue">900.000.000$</a>
+      </div>
+
+      <div class=card>
+        <img src="https://pbs.twimg.com/media/E5OyrgeVIAEToDK?format=jpg&name=4096x4096" alt="spaceship">
+        <h3>Grey Falcon Spaceship</h3>
+        <a href="#" class="btn-blue">OUT OF STOCK</a>
+      </div>
+
+      <div class=card>
+        <img src="https://i.pinimg.com/736x/f8/f9/5b/f8f95b56c2c724b8e2e865766cf2d766.jpg" alt="spaceship">
+        <h3>Absolute Speeder Spaceship</h3>
+        <a href="#" class="btn-blue">2.900.000.000$</a>
+      </div>
+
+      <div class=card>
+        <img src="https://i.pinimg.com/originals/75/83/8e/75838e9f25ae64cc34313b4d9e6dacc4.jpg" alt="spaceship">
+        <h3>Destroyer Battleship</h3>
+        <a href="#" class="btn-blue">6.800.000.000$</a>
+      </div>
+
+      <div class=card>
+        <img src="https://i.pinimg.com/1200x/dd/cf/0c/ddcf0cad4ab53be1a211ad2a5a6fa34a.jpg" alt="spaceship">
+        <h3>Homeland Storage Evolved</h3>
+        <a href="#" class="btn-blue">7.000.000.000$</a>
+      </div>
+   </div>
+
+<div class=cards>
+    <div class="container">
+        <div id="fleche" onclick="afficherTexte()">▼</div>
+
+        <div id="texte">
+            Space travel has been our main goal since we saw Star Wars and Interstellar. Since then, we've been working our best to provide the highest quality Spaceships and Space travel equipment to fulfill all your requierments. It's our duty to give the best spcae experience to our beloved clients, and for more informations, make sure to check our repetories.
+        </div>
+    </div>
+
+    <script>
+        function afficherTexte() {
+            var texte = document.getElementById("texte");
+            var fleche = document.getElementById("fleche");
+
+            if (texte.style.display === "none") {
+                texte.style.display = "block";
+                fleche.innerHTML = "▲";
+            } else {
+                texte.style.display = "none";
+                fleche.innerHTML = "▼";
+            }
+        }
+    </script>
+  </div>
+
+    <div class="bottom">
+        <p>Explorez l'univers avec nos vaisseaux spatiaux de pointe.</p>
+        <p>Contactez-nous au <a href="tel:+123456789">123-456-789</a></p>
+    </div>
+
+
+
+
+  </div>
+
+    <script>
+        function creerEtoiles() {
+            const nombreEtoiles = 100;
+
+            for (let i = 0; i < nombreEtoiles; i++) {
+                const etoile = document.createElement('div');
+                etoile.className = 'etoile';
+
+                // Position aléatoire
+                etoile.style.top = `${Math.random() * 100}%`;
+                etoile.style.left = `${Math.random() * 100}%`;
+
+                // Taille aléatoire
+                const taille = Math.random() * 3 + 1;
+                etoile.style.width = `${taille}px`;
+                etoile.style.height = `${taille}px`;
+
+                document.body.appendChild(etoile);
+            }
+        }
+
+        creerEtoiles();
+    </script>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+

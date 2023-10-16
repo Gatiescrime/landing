@@ -1,0 +1,31 @@
+.banner{
+  text-align: center;
+  color: purple;
+  padding: 150px 0px;
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%), url(https://steamuserimages-a.akamaihd.net/ugc/789756533617300825/866E142FCE4F91D8B8E2C99160E909BDF937AB9A/);
+  background-size: cover;
+  background-position: center;
+  animation: space 4s infinite alternate;
+}
+}
+
+.banner h1 {
+  font-size: 50px;
+}
+
+.banner h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px blue
+}
+
+
+@keyframes space {
+ 0% {
+  box-shadow: 0 0 20px #fff, 0 0 50px #fff, 0 0 80px #fff;
+  }
+  100% {
+    box-shadow: 0 0 30px #00f, 0 0 60px #00f, 0 0 100px #00f;
+  }
+}
